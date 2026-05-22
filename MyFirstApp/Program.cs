@@ -28,9 +28,9 @@ while (true)
 
     switch (choice)
     {
-        //case "1":
-        //    AddBook();
-        //    break;
+        case "1":
+            AddBook();
+            break;
 
         case "2":
             ShowBooks();
@@ -74,45 +74,45 @@ while (true)
     }
 }
 
-//void AddBook()
-//{
-//    Console.Write("Enter Id: ");
-//    int id = int.Parse(Console.ReadLine());
+void AddBook()
+{
+    Console.Write("Enter Id: ");
+    int id = int.Parse(Console.ReadLine());
 
-//    // Unique ID check
-//    for (int i = 0; i < count; i++)
-//    {
-//        if (books[i].Id == id)
-//        {
-//            Console.WriteLine("This ID already exists!");
-//            return;
-//        }
-//    }
+    // Unique ID check
+    for (int i = 0; i < count; i++)
+    {
+        if (books[i].Id == id)
+        {
+            Console.WriteLine("This ID already exists!");
+            return;
+        }
+    }
 
-//    Console.Write("Enter Name: ");
-//    string name = Console.ReadLine();
+    Console.Write("Enter Name: ");
+    string name = Console.ReadLine();
 
-//    Console.Write("Enter Author: ");
-//    string author = Console.ReadLine();
+    Console.Write("Enter Author: ");
+    string author = Console.ReadLine();
 
-//    Console.Write("Enter Year: ");
-//    int year = int.Parse(Console.ReadLine());
+    Console.Write("Enter Year: ");
+    int year = int.Parse(Console.ReadLine());
 
-//    books[count] = new Book()
-//    {
-//        Id = id,
-//        Name = name,
-//        Author = author,
-//        Year = year,
-//        IsBorrowed = false
-//    };
+    books[count] = new Book()
+    {
+        Id = id,
+        Name = name,
+        Author = author,
+        Year = year,
+        IsBorrowed = false
+    };
 
-//    count++;
+    count++;
 
-//    Console.ForegroundColor = ConsoleColor.Green;
-//    Console.WriteLine("Book added successfully!");
-//    Console.ResetColor();
-//}
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("Book added successfully!");
+    Console.ResetColor();
+}
 
 void ShowBooks()
 {
